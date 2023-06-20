@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { Container } from "@/modules/generic/components";
+import { Container } from "@/modules/bootstrap/components";
 import { ReactElement } from "react";
 
 export default function About(): ReactElement {

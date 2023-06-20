@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { ReactElement } from "react";
-import { Container } from "@/modules/generic/components";
+import { Container } from "@/modules/bootstrap/components";
 
 export default function HeroBanner(): ReactElement {
   return (
