@@ -10,7 +10,7 @@ export default function Container({
   className,
 }: IProps): ReactElement {
   return (
-    <div className={`max-w-[1200px] mx-auto w-full ${className}`}>{children}</div>
+    <div className={`max-w-[1200px] mx-auto w-full px-4 ${className}`}>{children}</div>
   );
 }
 

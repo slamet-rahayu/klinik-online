@@ -1,8 +1,22 @@
 import { ReactElement } from "react";
+import Link from "next/link";
 import Container from "../container";
 import cx from "classnames";
 
-const menu = ["Beranda", "Konsultasi", "Toko Obat"];
+const menu = [
+    {
+      title: "Beranda",
+      href: "/",
+    },
+    {
+      title: "Konsultasi",
+      href: "/konsultasi",
+    },
+    {
+      title: "Toko Obat",
+      href: "/shop",
+    },
+  ];
 
 export default function Header(): ReactElement {
   return (
@@ -15,10 +29,10 @@ export default function Header(): ReactElement {
               <ul className="flex">
                 {menu.map((item) => (
                   <li
-                    key={item}
+                    key={item.title}
                     className="mr-[40px] text-gray-400 font-semibold"
                   >
-                    {item}
+                    <Link href={item.href}>{item.title}</Link>
                   </li>
                 ))}
               </ul>

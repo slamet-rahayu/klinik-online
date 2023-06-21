@@ -40,7 +40,7 @@ export default function Articles(): ReactElement {
         </div>
         <div className="flex justify-between">
           {articles.map((article) => (
-            <div key={article.title} className="w-[255px]">
+            <div key={article.title} className="w-full mx-2">
               <img className="rounded-xl" src={article.image} alt={article.title} />
               <h2 className="text-[#535556] font-semibold text-lg my-4">{article.title}</h2>
               <p className="text-[#535556]">{article.shortDesc}</p>
